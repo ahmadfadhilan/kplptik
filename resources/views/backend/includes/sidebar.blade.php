@@ -19,6 +19,21 @@
                     <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.room')
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('dosen.index') }}">
+                    <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.lecturer')
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('mahasiswa.index') }}">
+                    <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.student')
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('tendik.index') }}">
+                    <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.tendik')
+                </a>
+            </li>
             <li class="nav-title">
                 @lang('menus.backend.sidebar.system')
             </li>

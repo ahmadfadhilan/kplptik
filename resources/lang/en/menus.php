@@ -49,7 +49,10 @@ return [
             'history'   => 'History',
             'system'    => 'System',
             'building'  => 'Building',
-            'room'      => 'Room'
+            'room'      => 'Room',
+            'lecturer'  => 'Lecturer',
+            'student'   => 'Student',
+            'tendik'    => 'Tendik'
         ],
     ],
 

@@ -36,3 +36,6 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
 
 Route::resource('bangunan','BangunansController');
 Route::resource('ruangan','RuangansController');
+Route::resource('dosen','DosensController');
+Route::resource('mahasiswa','MahasiswasController');
+Route::resource('tendik','TendiksCOntroller');
