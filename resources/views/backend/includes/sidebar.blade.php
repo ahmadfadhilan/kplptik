@@ -9,31 +9,51 @@
                     <i class="nav-icon icon-speedometer"></i> @lang('menus.backend.sidebar.dashboard')
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('bangunan.index') }}">
+            <li class="nav-title">
+                Main
+            </li>
+            <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('bangunan'), 'open') }}">
+                <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="#">
                     <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.building')
                 </a>
+
+                <ul class="nav-dropdown-items">
+                  <li class="nav-item">
+                      <a class="nav-link {{ active_class(Active::checkUriPattern('bangunan')) }}" href="{{ route('bangunan.index') }}">
+                           @lang('menus.backend.sidebar.building') Management
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link {{ active_class(Active::checkUriPattern('bangunan')) }}" href="{{ route('ruangan.index') }}">
+                           @lang('menus.backend.sidebar.room') Management
+                      </a>
+                  </li>
+                </ul>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('ruangan.index') }}">
-                    <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.room')
+            <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('dosen'), 'open') }}">
+                <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="#">
+                    <i class="nav-icon fa fa-users"></i> @lang('menus.backend.sidebar.building')
                 </a>
+
+                <ul class="nav-dropdown-items">
+                  <li class="nav-item">
+                      <a class="nav-link {{ active_class(Active::checkUriPattern('dosen')) }}" href="{{ route('dosen.index') }}">
+                           @lang('menus.backend.sidebar.lecturer') Management
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link {{ active_class(Active::checkUriPattern('mahasiswa')) }}" href="{{ route('mahasiswa.index') }}">
+                           @lang('menus.backend.sidebar.student') Management
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link {{ active_class(Active::checkUriPattern('tendik')) }}" href="{{ route('tendik.index') }}">
+                           @lang('menus.backend.sidebar.tendik') Management
+                      </a>
+                  </li>
+                </ul>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('dosen.index') }}">
-                    <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.lecturer')
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('mahasiswa.index') }}">
-                    <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.student')
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="{{ route('tendik.index') }}">
-                    <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.tendik')
-                </a>
-            </li>
+
             <li class="nav-title">
                 @lang('menus.backend.sidebar.system')
             </li>

@@ -112,9 +112,10 @@ class tendiksController extends Controller
      * @param  \App\Tendik  $tendik
      * @return \Illuminate\Http\Response
      */
-    public function destroy(tendik $tendik)
+
+    public function destroy($id)
     {
-      $tendik = Tendik::find($tendik->id);
+      $tendik = Tendik::find($id);
       $tendik->delete();
 
       //toast()->success('Data bangunan berhasil dihapus');
