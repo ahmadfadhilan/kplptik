@@ -12,6 +12,11 @@
             <li class="nav-title">
                 Main
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ active_class(Active::checkUriPattern('peralatan')) }}" href="{{ route('bangunan.index') }}">
+                    <i class="nav-icon icon-speedometer"></i> Peralatan
+                </a>
+            </li>
             <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('bangunan'), 'open') }}">
                 <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="#">
                     <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.building')
