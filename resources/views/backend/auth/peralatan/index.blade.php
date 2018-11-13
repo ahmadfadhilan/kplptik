@@ -29,14 +29,52 @@
                     <table class="table">
                         <thead>
                         <tr>
-                            <th>NIDN</th>
-                            <th>Nama</th>
-                            <th>Tempat, Tanggal Lahir</th>
+                            <th>Kode Barang</th>
+                            <th>Nama Barang</th>
+                            <th>Merk/Tipe</th>
+                            <th>Jumlah Barang</th>
+                            <th>Asal Barang</th>
+                            <th>Harga Barang</th>
+                            <th>Kondisi Barang</th>
+                            <th>Bukti Milik</th>
+                            <th>Penguasaan</th>
+                            <th>KIB</th>
+                            <th>Tahun Masuk Barang</th>
                             <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
-                          
+                          @foreach($peralatan as $peralatan)
+                              <tr>
+                                  <td>{{ $peralatan->kode_barang }}</td>
+                                  <td>{{ $peralatan->nama_barang }}</td>
+                                  <td>{{ $peralatan->merk }}</td>
+                                  <td>{{ $peralatan->jumlah }}</td>
+                                  <td>{{ $peralatan->asal_barang }}</td>
+                                  <td>{{ $peralatan->harga }}</td>
+                                  <td>{{ $peralatan->kondisi_barang }}</td>
+                                  <td>{{ $peralatan->bukti_milik }}</td>
+                                  <td>{{ $peralatan->penguasaan }}</td>
+                                  <td>{{ $peralatan->KIB }}</td>
+                                  <td>{{ $peralatan->tahun }}</td>
+                                  <td >
+                                      <a href="{{ route('dosen.show', [$dosen->id]) }}" class="btn btn-sm btn-outline-primary">
+                                          <i class="fa fa-eye"> </i>
+                                      </a>
+                                      <a href="{{ route('dosen.edit', [$dosen->id]) }}" class="btn btn-sm btn-outline-primary">
+                                          <i class="svg-inline fa fa-edit fa-w-18"> </i>
+                                      </a>
+                                      {!! Form::open(array(
+                                          'style' => 'display: inline-block;',
+                                          'method' => 'DELETE',
+                                          'onsubmit' => "return confirm('".trans("Apakah Kamu Yakin?")."');",
+                                          'route' => ['dosen.destroy', $dosen->id])) !!}
+                                      {!! Form::submit(trans('Delete'), array('class' => 'btn btn-sm btn-danger')) !!}
+                                      {!! Form::close() !!}
+
+                                  </td>
+                              </tr>
+                          @endforeach
                         </tbody>
                     </table>
                 </div>

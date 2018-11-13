@@ -15,10 +15,17 @@ class CreatePeralatansTable extends Migration
     {
         Schema::create('peralatans', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nama_aset');
-            $table->string('no_aset');
-            $table->string('status');
-            $able->integer('tahun');
+            $table->string('nama_barang');
+            $table->string('kode_barang');
+            $table->integer('jumlah');
+            $table->string('merk');
+            $table->integer('tahun');
+            $table->string('asal_barang');
+            $table->integer('harga');
+            $table->integer('kondisi_barang');
+            $table->integer('bukti_milik');
+            $table->integer('penguasaan');
+            $table->integer('KIB');
             $table->timestamps();
         });
     }

@@ -484,19 +484,21 @@
         },
         {
             "name": "divineomega/do-file-cache",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DivineOmega/DO-File-Cache.git",
-                "reference": "261c6e30a0de8cd325f826d08b2e51b2e367a1a3"
+                "reference": "46db7c711c4c283710854bad5187134f55d73198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DivineOmega/DO-File-Cache/zipball/261c6e30a0de8cd325f826d08b2e51b2e367a1a3",
-                "reference": "261c6e30a0de8cd325f826d08b2e51b2e367a1a3",
+                "url": "https://api.github.com/repos/DivineOmega/DO-File-Cache/zipball/46db7c711c4c283710854bad5187134f55d73198",
+                "reference": "46db7c711c4c283710854bad5187134f55d73198",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
+                "ext-zlib": "*",
                 "php": ">=5.6"
             },
             "require-dev": {
@@ -527,7 +529,7 @@
                 "library",
                 "php"
             ],
-            "time": "2018-09-12T23:08:34+00:00"
+            "time": "2018-11-09T22:38:06+00:00"
         },
         {
             "name": "divineomega/do-file-cache-psr-6",
@@ -1381,16 +1383,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.7.12",
+            "version": "v5.7.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4cb5bf13e0cd50015f8e6a420a52fa8b90758eb1"
+                "reference": "3ff3110ac14f2b4876acaff289bb55a1af74f02e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4cb5bf13e0cd50015f8e6a420a52fa8b90758eb1",
-                "reference": "4cb5bf13e0cd50015f8e6a420a52fa8b90758eb1",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/3ff3110ac14f2b4876acaff289bb55a1af74f02e",
+                "reference": "3ff3110ac14f2b4876acaff289bb55a1af74f02e",
                 "shasum": ""
             },
             "require": {
@@ -1456,6 +1458,7 @@
                 "aws/aws-sdk-php": "^3.0",
                 "doctrine/dbal": "^2.6",
                 "filp/whoops": "^2.1.4",
+                "guzzlehttp/guzzle": "^6.3",
                 "league/flysystem-cached-adapter": "^1.0",
                 "mockery/mockery": "^1.0",
                 "moontoast/math": "^1.1",
@@ -1520,7 +1523,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2018-10-30T14:44:34+00:00"
+            "time": "2018-11-07T12:41:02+00:00"
         },
         {
             "name": "laravel/socialite",
@@ -1943,16 +1946,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.34.0",
+            "version": "1.34.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "1dbd3cb01c5645f3e7deda7aa46ef780d95fcc33"
+                "reference": "6689b51b1dd5b1471c0f2c6df426037824114acc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/1dbd3cb01c5645f3e7deda7aa46ef780d95fcc33",
-                "reference": "1dbd3cb01c5645f3e7deda7aa46ef780d95fcc33",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/6689b51b1dd5b1471c0f2c6df426037824114acc",
+                "reference": "6689b51b1dd5b1471c0f2c6df426037824114acc",
                 "shasum": ""
             },
             "require": {
@@ -1960,8 +1963,11 @@
                 "symfony/translation": "~2.6 || ~3.0 || ~4.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "~2",
                 "phpunit/phpunit": "^4.8.35 || ^5.7"
+            },
+            "suggest": {
+                "friendsofphp/php-cs-fixer": "Needed for the `composer phpcs` command. Allow to automatically fix code style.",
+                "phpstan/phpstan": "Needed for the `composer phpstan` command. Allow to detect potential errors."
             },
             "type": "library",
             "extra": {
@@ -1994,7 +2000,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-09-20T19:36:25+00:00"
+            "time": "2018-11-12T22:45:42+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2823,16 +2829,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "2.24.0",
+            "version": "2.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "867df3945e5c622e2e310c36cf226fe4594d7d0f"
+                "reference": "6b41d1d1726d432342546f9d3c79144b082812dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/867df3945e5c622e2e310c36cf226fe4594d7d0f",
-                "reference": "867df3945e5c622e2e310c36cf226fe4594d7d0f",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/6b41d1d1726d432342546f9d3c79144b082812dc",
+                "reference": "6b41d1d1726d432342546f9d3c79144b082812dc",
                 "shasum": ""
             },
             "require": {
@@ -2883,7 +2889,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2018-11-07T02:15:22+00:00"
+            "time": "2018-11-07T22:48:36+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4112,16 +4118,16 @@
         },
         {
             "name": "barryvdh/laravel-ide-helper",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-                "reference": "7db1843473e1562d8e0490b51db847d3a1415140"
+                "reference": "981ff45b43e0cf808af0a5a5f40f6369e0e29499"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/7db1843473e1562d8e0490b51db847d3a1415140",
-                "reference": "7db1843473e1562d8e0490b51db847d3a1415140",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/981ff45b43e0cf808af0a5a5f40f6369e0e29499",
+                "reference": "981ff45b43e0cf808af0a5a5f40f6369e0e29499",
                 "shasum": ""
             },
             "require": {
@@ -4182,20 +4188,20 @@
                 "phpstorm",
                 "sublime"
             ],
-            "time": "2018-09-06T18:41:09+00:00"
+            "time": "2018-10-06T09:35:51+00:00"
         },
         {
             "name": "barryvdh/reflection-docblock",
-            "version": "v2.0.4",
+            "version": "v2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/ReflectionDocBlock.git",
-                "reference": "3dcbd98b5d9384a5357266efba8fd29884458e5c"
+                "reference": "64165bd4ba9a550d11ea57569463b7c722dc6b0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/ReflectionDocBlock/zipball/3dcbd98b5d9384a5357266efba8fd29884458e5c",
-                "reference": "3dcbd98b5d9384a5357266efba8fd29884458e5c",
+                "url": "https://api.github.com/repos/barryvdh/ReflectionDocBlock/zipball/64165bd4ba9a550d11ea57569463b7c722dc6b0a",
+                "reference": "64165bd4ba9a550d11ea57569463b7c722dc6b0a",
                 "shasum": ""
             },
             "require": {
@@ -4231,7 +4237,7 @@
                     "email": "mike.vanriel@naenius.com"
                 }
             ],
-            "time": "2016-06-13T19:28:20+00:00"
+            "time": "2018-10-25T19:09:52+00:00"
         },
         {
             "name": "beyondcode/laravel-dump-server",

@@ -38,4 +38,5 @@ Route::resource('bangunan','BangunansController');
 Route::resource('ruangan','RuangansController');
 Route::resource('dosen','DosensController');
 Route::resource('mahasiswa','MahasiswasController');
-Route::resource('tendik','TendiksCOntroller');
+Route::resource('tendik','TendiksController');
+Route::resource('peralatan','PeralatansControlller');

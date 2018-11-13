@@ -13,8 +13,8 @@
                 Main
             </li>
             <li class="nav-item">
-                <a class="nav-link {{ active_class(Active::checkUriPattern('peralatan')) }}" href="{{ route('bangunan.index') }}">
-                    <i class="nav-icon icon-speedometer"></i> Peralatan
+                <a class="nav-link {{ active_class(Active::checkUriPattern('peralatan')) }}" href="{{ route('peralatan.index') }}">
+                    <i class="nav-icon icon-speedometer"></i> Asset
                 </a>
             </li>
             <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('bangunan'), 'open') }}">
