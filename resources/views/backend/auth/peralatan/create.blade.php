@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-    {!! Form::open(['route' => 'dosen.store', 'method' => 'post'] ) !!}
+    {!! Form::open(['route' => 'peralatan.store', 'method' => 'post'] ) !!}
       <div class="card">
 
         <div class="card-body">
@@ -20,14 +20,14 @@
                 </div><!--col-->
             </div><!--row-->
 
-        @include('backend.auth.dosen._form')
+        @include('backend.auth.peralatan._form')
 
         </div><!--card-body-->
 
             <div class="card-footer clearfix">
                 <div class="row">
                     <div class="col">
-                        {{ form_cancel(route('dosen.index'), __('buttons.general.cancel')) }}
+                        {{ form_cancel(route('peralatan.index'), __('buttons.general.cancel')) }}
                     </div><!--col-->
 
                     <div class="col text-right">

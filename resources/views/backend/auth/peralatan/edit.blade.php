@@ -8,7 +8,7 @@
 
 @section('content')
 
-{!! Form::model($dosen, ['route' => ['dosen.update', $dosen->id], 'method' => 'PATCH'] ) !!}
+{!! Form::model($peralatan, ['route' => ['peralatan.update', $peralatan->id], 'method' => 'PATCH'] ) !!}
     <div class="card">
         <div class="card-body">
             <div class="row">
@@ -21,14 +21,14 @@
             </div><!--row-->
 
             <hr>
-            @include('backend.auth.dosen._form')
+            @include('backend.auth.peralatan._form')
 
         </div><!--card-body-->
 
         <div class="card-footer">
             <div class="row">
                 <div class="col">
-                    {{ form_cancel(route('dosen.index'), __('buttons.general.cancel')) }}
+                    {{ form_cancel(route('peralatan.index'), __('buttons.general.cancel')) }}
                 </div><!--col-->
 
                 <div class="col text-right">
