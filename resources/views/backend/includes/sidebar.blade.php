@@ -14,11 +14,11 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link {{ active_class(Active::checkUriPattern('peralatan')) }}" href="{{ route('peralatan.index') }}">
-                    <i class="nav-icon icon-speedometer"></i> Asset
+                    <i class="nav-icon fa fa-archive"></i> Asset
                 </a>
             </li>
             <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('bangunan'), 'open') }}">
-                <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="#">
+                <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('')) }}" href="#">
                     <i class="nav-icon fa fa-building"></i> @lang('menus.backend.sidebar.building')
                 </a>
 
@@ -36,7 +36,7 @@
                 </ul>
             </li>
             <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('dosen'), 'open') }}">
-                <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('admin/dashboard')) }}" href="#">
+                <a class="nav-link nav-dropdown-toggle {{ active_class(Active::checkUriPattern('')) }}" href="#">
                     <i class="nav-icon fa fa-users"></i> @lang('menus.backend.sidebar.building')
                 </a>
 

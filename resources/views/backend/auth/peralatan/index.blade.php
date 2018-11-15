@@ -58,17 +58,17 @@
                                   <td>{{ $peralatan->KIB }}</td>
                                   <td>{{ $peralatan->tahun }}</td>
                                   <td >
-                                      <a href="{{ route('dosen.show', [$dosen->id]) }}" class="btn btn-sm btn-outline-primary">
+                                      <a href="{{ route('peralatan.show', [$peralatan->id]) }}" class="btn btn-sm btn-outline-primary">
                                           <i class="fa fa-eye"> </i>
                                       </a>
-                                      <a href="{{ route('dosen.edit', [$dosen->id]) }}" class="btn btn-sm btn-outline-primary">
+                                      <a href="{{ route('peralatan.edit', [$peralatan->id]) }}" class="btn btn-sm btn-outline-primary">
                                           <i class="svg-inline fa fa-edit fa-w-18"> </i>
                                       </a>
                                       {!! Form::open(array(
                                           'style' => 'display: inline-block;',
                                           'method' => 'DELETE',
                                           'onsubmit' => "return confirm('".trans("Apakah Kamu Yakin?")."');",
-                                          'route' => ['dosen.destroy', $dosen->id])) !!}
+                                          'route' => ['peralatan.destroy', $peralatan->id])) !!}
                                       {!! Form::submit(trans('Delete'), array('class' => 'btn btn-sm btn-danger')) !!}
                                       {!! Form::close() !!}
 
